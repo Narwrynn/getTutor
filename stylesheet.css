@@ -195,8 +195,10 @@ li a:hover{
     margin: 0;
 }
 .card img{
-    width: 50%;
-    height: 50%;
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
     border-radius: 50%;
 }
 
