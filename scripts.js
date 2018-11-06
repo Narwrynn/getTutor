@@ -11,3 +11,11 @@ collapseBtn.addEventListener("click", function(){
     }
 });
 
+window.addEventListener('resize', function(){
+     if(window.innerWidth >= 800){
+         navMenu.style.display = "flex";
+     }else{
+         navMenu.style.display = "none";
+         collapseBtn.classList.remove("collapse-active");
+     }
+});
