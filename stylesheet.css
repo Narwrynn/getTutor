@@ -12,7 +12,8 @@ Grey: #383838
 
 /* general */
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body{
@@ -33,7 +34,8 @@ a{
     border-radius: 10px;
     color: #F1F3CE;
     font-size: 1.1rem;
-    box-shadow: 1px 1px 10px #0a0a0a;
+    -webkit-box-shadow: 1px 1px 10px #0a0a0a;
+            box-shadow: 1px 1px 10px #0a0a0a;
     cursor: pointer;
     max-width: 200px;
 }
@@ -41,6 +43,8 @@ a{
 .btn:hover{
     background-color: #001d2b;
     color: #1E656D; 
+    -webkit-transition: 0.2s ease-in; 
+    -o-transition: 0.2s ease-in; 
     transition: 0.2s ease-in;
 }
 .container{
@@ -51,9 +55,15 @@ a{
 
 /* Nav style */
 nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #00293c;
     width: 100%;
     position: fixed;
@@ -62,7 +72,8 @@ nav{
     padding-left: 10%;
     padding-right: 10%;
     color: #f1f3ce;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 #collapse-menu{
@@ -78,8 +89,12 @@ nav{
 }
 .nav-menu{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-width: 40%;
 }
 
@@ -95,6 +110,8 @@ nav ul li{
 }
 li a:hover{
     color: #1e656d;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
     transition: .2s linear;
 }
 
@@ -106,9 +123,15 @@ li a:hover{
     height: 100vh;
     width: 100%;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #F1F3CE;
     text-shadow: 1px 1px 10px #0a0a0a;
     text-align: center;
@@ -129,9 +152,16 @@ li a:hover{
     width: 100%;
     margin-top: 1rem;
     color: #00293C;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -154,26 +184,47 @@ li a:hover{
 /*sunjects*/
 
 .cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .card{
     margin-right: .5rem;
     height: 400px;
     margin-top: 1rem;
-    flex-grow: 1;
-    flex-basis: 30%;
-    flex-shrink: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     margin-left: .5rem;
     background-color: #00293C;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
     border-radius: 2%;
     
 }
@@ -216,10 +267,17 @@ li a:hover{
 }
 
 .contact{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 40%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .contact input{
     width: 100%;
@@ -232,16 +290,20 @@ li a:hover{
 
 footer{
     width: 100%;
-    height 400px;
     background-color: #383838;
     color: #F1F3CE;
     position: absolute;
     left: 0;
     padding-left: 10%;
     padding-right: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     
 }
 /* Media Queries */
@@ -249,9 +311,16 @@ footer{
 @media (max-width: 800px){
     .nav-menu{
         display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin: auto;
         padding-left: 0;
         width: 100%;
@@ -273,7 +342,10 @@ footer{
         font-size: 1.5rem;
     }
     .cards{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .content h3{
         font-size: 1.5rem;
