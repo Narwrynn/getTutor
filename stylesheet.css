@@ -74,6 +74,7 @@ nav{
     color: #f1f3ce;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    z-index: 2;
 }
 
 #collapse-menu{
